@@ -22,9 +22,10 @@ body {
 }
 
 .card-container{
-    background-color: hsl(40, 86%, 53%);
+    background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
-    
+    box-shadow: 2px 0 20px 1px rgba(0, 0, 0, 0.612);
+    margin-top: 5rem;
 }
 
 .hero-img{
@@ -34,16 +35,21 @@ body {
 
 .card-info-container{
     padding:10px;
+    margin-bottom: 3rem;
+    
 }
 
 .header{
     color:var(--dark-blue);
     text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .info{
     text-align: center;
     color:var(--desat-blue);
+    margin-bottom: 1rem;
 }
 
 .plan-section{
@@ -52,15 +58,78 @@ body {
     gap: 10px;
     background-color: var(--v-pale-blue);
     border-radius: 10px;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.plan-img{
+    margin-left: 1rem;
+}
+
+.plan-info{
+    margin-left: 1rem;
+}
+
+.plan-title{
+    color:var(--dark-blue);
+    margin-top: 0.5rem;
+}
+
+.plan-price{
+    color:var(--desat-blue);
+}
+.change-plan-link{
+    display:block;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--bright-blue);
+}
+
+.change-plan-link:hover{
+    text-decoration: none;
+    color:hsl(245, 83%, 68%);
 }
 
 .music-icon{
-    padding: 3px;
+/* padding: 3px; */
+margin-top: 5px;
+margin-left: 5px;
 }
 
 
 .btn{
     display: block;
+    margin: 0 auto 2rem;
+    background-color: var(--bright-blue);
+    color: var(--v-pale-blue);
+    border: none;
+    border-radius:10px;
+    padding: 1rem 5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.2);
+    /* letter-spacing: 1px; */
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: hsl(245, 83%, 68%);
+    
+}
+
+.cancel-order{
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: var(--desat-blue);
+    font-weight: 700;
+    
+}
+
+.cancel-order:hover{
+    color: var(--dark-blue);
 }
 
 .attribution {
@@ -69,4 +138,12 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 460px) {
+    .card-container{
+        max-width: 450px;
+        margin: 100px auto;
+    }
 }
