@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --v-pale-blue: hsl(225, 100%, 98%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --desat-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  /* font-size: 16px; */
+  background-color:var(--pale-blue);
+  padding: 10px;
+}
+
+.card-container{
+    background-color: hsl(40, 86%, 53%);
+    border-radius: 10px;
+    
+}
+
+.hero-img{
+    max-width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.card-info-container{
+    padding:10px;
+}
+
+.header{
+    color:var(--dark-blue);
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+    color:var(--desat-blue);
+}
+
+.plan-section{
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 1fr;
+    gap: 10px;
+    background-color: var(--v-pale-blue);
+    border-radius: 10px;
+}
+
+.music-icon{
+    padding: 3px;
+}
+
+
+.btn{
+    display: block;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
